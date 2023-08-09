@@ -55,6 +55,7 @@ body {
 #create-dog-form label {
   margin-top: 20px;
 }
+
 #create-dog-form input[type="submit"] {
   margin-top: 20px;
   color: black;
@@ -86,6 +87,9 @@ body {
 
 .selector {
   user-select: none;
+  color: inherit;
+  font-size: inherit;
+  background-color: white;
   border: 1px solid black;
   border-radius: 400px;
   padding: 4px 10px;
@@ -122,7 +126,7 @@ body {
   flex: 2;
 }
 
-.container-header > * {
+.container-header>* {
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -350,34 +354,35 @@ body {
   transform: translateY(0);
 }
 
-#home-page > h1 {
+#home-page>h1 {
   font-size: 90px;
   background-color: black;
   border-radius: 25px;
 }
 
-h1 > .one,
+h1>.one,
 .six,
 .eleven {
   color: tomato;
 }
 
-h1 > .two,
+h1>.two,
 .seven,
 .twelve {
   color: orange;
 }
 
-h1 > .three,
+h1>.three,
 .eight {
   color: palegreen;
 }
-h1 > .four,
+
+h1>.four,
 .nine {
   color: skyblue;
 }
 
-h1 > .five,
+h1>.five,
 .ten {
   color: palevioletred;
 }

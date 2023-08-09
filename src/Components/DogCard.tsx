@@ -1,7 +1,15 @@
-import { Dog } from "../types";
+import { Dog } from '../types';
 import { FavoriteButton } from "./FavoriteButton";
 import { TrashButton } from "./TrashButton";
 import { UnfavoriteButton } from "./UnfavoriteButton";
+
+export interface DogCardProps {
+  dog: Dog;
+  onTrashIconClick: () => void;
+  onEmptyHeartClick: () => void;
+  onHeartClick: () => void;
+  isLoading: boolean;
+}
 
 // ! Do Not Make Changes To This File
 export const DogCard = ({
